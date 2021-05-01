@@ -1,0 +1,48 @@
+---
+title: Analysis
+author: Giuseppe Tinti Tomio
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(gt)
+library(here)
+source(here("R/functions.R"))
+
+data <- read_csv(here("data/diamonds.csv"))
+```
+
+# Analysis
+
+## Table
+```{r table}
+data %>%
+    summarise(
+        Minimum = min(price),
+        Mean = mean(price),
+        Maximum = max(price),
+        `Standard Deviation` = sd(price)
+    ) %>%
+    pivot_longer(everything(), names_to = "Metric", values_to = "Value") %>%
+    gt() %>%
+    fmt_number(Value, decimals = 0, pattern = "${x}")
+```
+
+## Plot
+```{r plot}
+data %>%
+    ggplot(aes(x = carat, y = price)) +
+    geom_point(alpha = 0.1) +
+    scale_x_log10() +
+    scale_y_log10()
+```
+
+## Model
+```{r model}
+data %>%
+    lm(log(price) ~ log(carat), data = .)  %>%
+    summary()
+```
