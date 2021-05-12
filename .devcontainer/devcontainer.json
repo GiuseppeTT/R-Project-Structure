@@ -16,13 +16,22 @@
 		"r.sessionWatcher": true,
 		"[r]": {
 			"editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
-		}
+		},
+
+		// Manually added
+		"gitlens.codeLens.enabled": false,
+		"gitlens.currentLine.enabled": false,
+		"gitlens.hovers.enabled": false,
+		"gitlens.statusBar.enabled": false,
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ikuyadeu.r",
-		"reditorsupport.r-lsp"
+		"reditorsupport.r-lsp",
+
+		// Manually added
+		"eamodio.gitlens",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
