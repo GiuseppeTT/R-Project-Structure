@@ -1,0 +1,6 @@
+^\.devcontainer$
+^data$
+^extra$
+^output$
+^render\.R$
+^Rmd$
