@@ -1,5 +1,5 @@
 Package: RProjectStructure
-Title: A presentation about R project structures.
+Title: A presentation about R project structures
 Version: 0.0.0.9000
 Authors@R:
     person(given = "Giuseppe",
