@@ -20,3 +20,6 @@ Imports:
     here,
     rmarkdown,
     xaringan
+Suggests: 
+    devtools,
+    usethis
