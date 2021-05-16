@@ -4,3 +4,4 @@
 ^output$
 ^render\.R$
 ^Rmd$
+^\.github$
