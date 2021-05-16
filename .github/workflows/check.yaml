@@ -22,9 +22,9 @@ jobs:
       - name: Install pandoc
         uses: r-lib/actions/setup-pandoc@v1
 
-      # - name: Install system packages
-      #   run: |
-      #     sudo apt-get install <package>
+      - name: Install system packages
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
 
       - name: Restore/Cache R packages
         uses: actions/cache@v2
