@@ -1,4 +1,5 @@
 ^\.devcontainer$
+^\.github$
 ^data$
 ^extra$
 ^output$
