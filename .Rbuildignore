@@ -1,7 +1,0 @@
-^\.devcontainer$
-^\.github$
-^data$
-^extra$
-^output$
-^render\.R$
-^Rmd$
