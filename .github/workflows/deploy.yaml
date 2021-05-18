@@ -49,8 +49,8 @@ jobs:
 
       - name: Remove gitignore files from github-pages folder for deploy
         run: |
-          rm output/github-pages/.gitignore
-          rm output/github-pages/**/.gitignore
+          rm -f output/github-pages/.gitignore
+          rm -f output/github-pages/**/.gitignore
 
       - name: Deploy presentation to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.0.0
