@@ -51,5 +51,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: presentation-${ GITHUB_SHA }
+          name: presentation-${{ github.sha }}
           path: output/github-pages/presentation.html
