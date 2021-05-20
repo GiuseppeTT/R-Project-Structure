@@ -65,8 +65,8 @@ class: inverse, center, middle
 # Project structure
 
 - The purpose of a project structure is to **save time** by enforcing **organization**
-- Always aim for the simplest structure that solves the job
-- You can find examples of projects that follow the next structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
+- Always aim for the simplest structure that does the job
+- You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
 
 ---
 class: inverse, center, middle
