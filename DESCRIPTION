@@ -13,16 +13,17 @@ Description: A presentation about R project structures. It includes a
 License: MIT + file LICENSE
 URL: https://github.com/GiuseppeTT/R-Project-Structure
 Imports:
-    stringr,
+    crayon,
     here,
     magrittr,
+    purrr,
     rmarkdown,
-    xaringan,
-    crayon,
-    purrr
+    stringr,
+    xaringan
 Suggests:
     devtools,
     gt,
+    lintr,
     plumber,
     shiny,
     tidyverse,
