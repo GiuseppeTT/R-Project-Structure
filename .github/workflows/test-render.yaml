@@ -48,3 +48,8 @@ jobs:
       - name: Render presentation
         run: |
           Rscript render.R
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: presentation-${{ env.GITHUB_SHA }}
+          path: output/github-pages/presentation.html
