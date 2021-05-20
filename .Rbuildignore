@@ -1,6 +1,7 @@
 ^\.devcontainer$
 ^\.github$
 ^data$
+^example$
 ^extra$
 ^output$
 ^render\.R$
