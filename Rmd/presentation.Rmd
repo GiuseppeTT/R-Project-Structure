@@ -310,7 +310,7 @@ class: inverse, center, middle
 Some tools for advanced structures:
 - `{targets}` to structure analysis
 - Package structure to structure projects (yeah, not intuitive)
-- `{lintr}` to enforce that code is pretty
+- `{lintr}` to enforce code consistency
 - GitHub Pages and/or `{rsconnect}` to host presentations, reports, dashboards, apis, etc
 - `docker` to solve **all** dependency problems
 - GitHub Actions to automate everything above
