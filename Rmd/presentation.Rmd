@@ -274,7 +274,7 @@ directory("my-project/", list(
 class: inverse, center, middle
 # Intermediate template
 
-### You don't need until you do
+### You don't need it until you do
 
 ---
 # Intermediate template
