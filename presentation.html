@@ -148,7 +148,7 @@ Have you faced any of this problems lately?
 - Doesn&#39;t remember how to run your analysis
 - Is afraid of changing one line and breaking everything
 
-Then you will benefit from this work!
+Then you will definitely benefit from this work!
 
 ---
 class: inverse, center, middle
@@ -161,8 +161,9 @@ class: inverse, center, middle
 
 In this presentation, I will:
 
+- Introduce RStudio projects
 - Teach a powerful, yet simple, project template
-- Show how to extend it (e.g. `shiny` apps)
+- Show how to extend it (e.g. `{shiny}` apps)
 - Discuss a bit about version control
 - Mention some tools for advanced users
 
@@ -175,7 +176,7 @@ class: inverse, center, middle
 
 - The purpose of a project structure is to **save time** by enforcing **organization**
 - Always aim for the simplest structure that solves the job
-- You can find examples of projects following the next structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
+- You can find examples of projects that follow the next structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
 
 ---
 class: inverse, center, middle
@@ -190,75 +191,23 @@ class: inverse, center, middle
 ---
 # No structure
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-[1] &quot;data.csv&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[2]]
-[1] &quot;professor-instructions.pdf&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[3]]
-[1] &quot;pretty-figure.png&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[4]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # No structure (RStudio project)
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-[1] &quot;data.csv&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[2]]
-[1] &quot;professor-instructions.pdf&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[3]]
-[1] &quot;pretty-figure.png&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[4]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[5]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).
 
@@ -271,142 +220,29 @@ class: inverse, center, middle
 ---
 # Basic template
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-$files[[1]]
-[1] &quot;data.csv&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-$files[[1]]
-[1] &quot;professor-instructions.pdf&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-$files[[1]]
-[1] &quot;pretty-figure.png&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Basic template
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 class: inverse, center, middle
@@ -417,436 +253,80 @@ class: inverse, center, middle
 ---
 # Extensions: subfolders
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;clean/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;raw/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;figure/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;model/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;table/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;clean.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[7]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;clean/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;raw/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;figure/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;model/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;table/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;clean.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: R Markdown
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;presentation.html&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;report.pdf&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[7]]
-[1] &quot;presentation.Rmd&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[8]]
-[1] &quot;report.Rmd&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[9]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: R Markdown (structured)
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-$files[[1]]
-[1] &quot;presentation.html&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[2]]
-[1] &quot;report.pdf&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-$name
-[1] &quot;Rmd/&quot;
-
-$files
-$files[[1]]
-[1] &quot;presentation.Rmd&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[2]]
-[1] &quot;report.Rmd&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[6]]
-[1] &quot;render.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[7]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;Rmd/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;render.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: shiny
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-$files[[1]]
-[1] &quot;global.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[2]]
-[1] &quot;server.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[3]]
-[1] &quot;ui.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;app.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;global.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;server.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;ui.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;app.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: plumber
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-$files[[1]]
-[1] &quot;plumber.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;api.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;plumber.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;api.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 class: inverse, center, middle
@@ -857,76 +337,16 @@ class: inverse, center, middle
 ---
 # Intermediate template
 
-
-```
-$name
-[1] &quot;my-project/&quot;
-
-$files
-$files[[1]]
-$name
-[1] &quot;data/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[2]]
-$name
-[1] &quot;extra/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[3]]
-$name
-[1] &quot;output/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[4]]
-$name
-[1] &quot;R/&quot;
-
-$files
-list()
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-
-$files[[5]]
-[1] &quot;.gitignore&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[6]]
-[1] &quot;README.md&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[7]]
-[1] &quot;analysis.R&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-$files[[8]]
-[1] &quot;my-project.Rproj&quot;
-attr(,&quot;class&quot;)
-[1] &quot;plain_file&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;directory&quot;
-```
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;.gitignore&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;README.md&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 class: inverse, center, middle
@@ -938,10 +358,11 @@ class: inverse, center, middle
 # Advanced structure
 
 Some tools for advanced structures:
-- Package structure to structure code
-- `targets` to structure analysis
-- GitHub Pages and/or `rsconnect` to host presentations, reports, dashboards, apis, etc
-- `docker` to solve all dependency problems
+- `{targets}` to structure analysis
+- Package structure to structure projects (yeah, not intuitive)
+- `{lintr}` to enforce that code is pretty
+- GitHub Pages and/or `{rsconnect}` to host presentations, reports, dashboards, apis, etc
+- `docker` to solve **all** dependency problems
 - GitHub Actions to automate everything above
 
 ---
