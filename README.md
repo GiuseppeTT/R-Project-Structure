@@ -8,7 +8,7 @@ A presentation about R project structures.
 
 ## How to run
 ### ... On RStudio
-TODO: The same steps as "How to run ... On terminal (linux)" but on the Rstudio interface.
+**TODO:** The same steps as "How to run ... On terminal (linux)" but on Rstudio.
 
 ### ... On VSCode
 You can run the project inside a development container by following these steps in the VSCode code editor:
