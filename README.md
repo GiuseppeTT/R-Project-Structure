@@ -59,6 +59,7 @@ Project structure:
 - `.Rbuildignore`: List files that R project package should ignore during building
 - `DESCRIPTION`: R project package meta file
 - `LICENSE`: License file
+- `makefile`: List useful commands. You can use them on terminal with `make <command_name>`
 - `NAMESPACE`: R project package exports. Ignored by git
 - `README.md`: Must read file. This very file you are reading
 - `render.R`: Run this script to render the presentation
