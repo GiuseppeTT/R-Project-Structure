@@ -252,25 +252,6 @@ directory("my-project/", list(
 ```
 
 ---
-# Extensions: plumber
-
-```{r}
-directory("my-project/", list(
-    directory("data/", list(
-    )),
-    directory("extra/", list(
-    )),
-    directory("output/", list(
-    )),
-    directory("R/", list(
-        "plumber.R"
-    )),
-    "api.R",
-    "my-project.Rproj"
-))
-```
-
----
 class: inverse, center, middle
 # Intermediate template
 
