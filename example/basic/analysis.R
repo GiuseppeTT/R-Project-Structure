@@ -1,9 +1,9 @@
 library(tidyverse)
 library(gt)
-library(here)
-source(here("R/functions.R"))
 
-data <- read_csv(here("data/diamonds.csv"))
+source("R/functions.R")
+
+data <- read_csv("data/diamonds.csv")
 
 table <-
     data %>%
@@ -17,7 +17,7 @@ table <-
     gt() %>%
     fmt_number(Value, decimals = 0, pattern = "${x}")
 
-gtsave(table, here("output/table.html"))
+gtsave(table, "output/table.html")
 
 plot <-
     data %>%
@@ -26,11 +26,11 @@ plot <-
     scale_x_log10() +
     scale_y_log10()
 
-ggsave(here("output/plot.png"), plot)
+ggsave("output/plot.png", plot)
 
 model <-
     data %>%
     lm(log(price) ~ log(carat), data = .)  %>%
     summary()
 
-write_output(model, here("output/model.txt"))
+write_output(model, "output/model.txt")

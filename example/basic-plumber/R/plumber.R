@@ -1,4 +1,4 @@
-data <- read_csv(here("data/diamonds.csv"))
+data <- read_csv("../data/diamonds.csv")
 
 model <-
     data %>%

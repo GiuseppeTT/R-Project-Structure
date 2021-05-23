@@ -308,6 +308,7 @@ class: inverse, center, middle
 # Advanced structure
 
 Some tools for advanced structures:
+- `{here}` for reliable relative paths
 - `{targets}` to structure analysis
 - Package structure to structure projects (yeah, not intuitive)
 - `{lintr}` to enforce code consistency
