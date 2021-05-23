@@ -1,6 +1,6 @@
 # R-Project-Structure
 ## Description
-A presentation about R project structures.
+A presentation about R project structures. It includes a basic template along with some extensions that should cover most cases. For the more advanced users, the presentation also mentions some practices such as version control and containerization.
 
 ## Useful links
 - [Presentation](giuseppett.github.io/r-project-structure/presentation.html)
