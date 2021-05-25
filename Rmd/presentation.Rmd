@@ -70,7 +70,9 @@ class: inverse, center, middle
 ---
 # Project structure
 
-- The purpose of a project structure is to **save time** by enforcing **organization**
+- Project structure is a technical name for how you organize your files in your project
+
+- The purpose is to **save time** by enforcing **organization**
 
 - Always aim for the simplest structure that does the job
 
