@@ -252,9 +252,6 @@ directory("my-project/", list(
     directory("output/", list(
     )),
     directory("R/", list(
-        "global.R",
-        "server.R",
-        "ui.R"
     )),
     "app.R",
     "my-project.Rproj"
