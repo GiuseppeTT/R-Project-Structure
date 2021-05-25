@@ -1,3 +1,5 @@
+setwd("path/to/my/project")
+
 library(tidyverse)
 library(gt)
 
