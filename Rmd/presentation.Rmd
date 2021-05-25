@@ -337,20 +337,20 @@ Some tools for advanced structures:
 
 ---
 class: inverse, center, middle
-# Last remarks
+# Summary
 
-### 30 minutes of presentation in 3 minutes
+### The only thing here you need to pay attention to
 
 ---
-# Last remarks
+# Summary
 
 In summary:
 
 - If your project is going to take more than one **day**, use at least the **basic** structure
 
-- If your project is going to evolve more than one **coder**, try to use at least the **intermediate** structure
+- If your project is going to take more than one **coder**, try to use at least the **intermediate** structure
 
-- If your project is going to take **a lot of** time and/or people, consider the **advanced** practices
+- If your project is going to take **a lot of** time and/or people, consider the **advanced** structure
 
 - Extend them as necessary, they are flexible!
 
