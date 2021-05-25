@@ -35,7 +35,9 @@ class: inverse, center, middle
 Have you faced any of this problems lately?
 
 - Feel things are constantly disorganized
+
 - Doesn't remember how to run your analysis
+
 - Is afraid of changing one line and breaking everything
 
 Then you will definitely benefit from this work!
@@ -52,9 +54,13 @@ class: inverse, center, middle
 In this presentation, I will:
 
 - Introduce RStudio projects
+
 - Teach a powerful, yet simple, project template
+
 - Show how to extend it (e.g. `{shiny}` apps)
+
 - Discuss a bit about version control
+
 - Mention some tools for advanced users
 
 ---
@@ -65,7 +71,9 @@ class: inverse, center, middle
 # Project structure
 
 - The purpose of a project structure is to **save time** by enforcing **organization**
+
 - Always aim for the simplest structure that does the job
+
 - You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
 
 ---
@@ -289,12 +297,19 @@ class: inverse, center, middle
 # Advanced structure
 
 Some tools for advanced structures:
+
 - `{here}` for reliable relative paths
+
 - `{targets}` to structure analysis
+
 - Package structure to structure projects (yeah, not intuitive)
+
 - `{lintr}` to enforce code consistency
+
 - GitHub Pages and/or `{rsconnect}` to host presentations, reports, dashboards, apis, etc
+
 - `docker` to solve **all** dependency problems
+
 - GitHub Actions to automate everything above
 
 ---
@@ -307,8 +322,13 @@ class: inverse, center, middle
 # Last remarks
 
 In summary:
+
 - If your project is going to take more than one **day**, use at least the **basic** structure
+
 - If your project is going to evolve more than one **coder**, try to use at least the **intermediate** structure
+
 - If your project is going to take **a lot of** time and/or people, consider the **advanced** practices
+
 - Extend them as necessary, they are flexible!
+
 - BUT, don't overcomplicate
