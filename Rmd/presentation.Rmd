@@ -74,7 +74,7 @@ class: inverse, center, middle
 
 - Always aim for the simplest structure that does the job
 
-- You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
+.footnote[You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)]
 
 ---
 class: inverse, center, middle
@@ -111,7 +111,7 @@ directory("my-project/", list(
 ))
 ```
 
-You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).
+.footnote[You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
 
 ---
 class: inverse, center, middle
@@ -285,7 +285,7 @@ directory("my-project/", list(
 ))
 ```
 
-You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).
+.footnote[You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
 
 ---
 class: inverse, center, middle
