@@ -127,13 +127,10 @@ class: inverse, center, middle
 ```{r}
 directory("my-project/", list(
     directory("data/", list(
-        "data.csv"
     )),
     directory("extra/", list(
-        "professor-instructions.pdf"
     )),
     directory("output/", list(
-        "pretty-figure.png"
     )),
     directory("R/", list(
     )),
@@ -148,10 +145,13 @@ directory("my-project/", list(
 ```{r}
 directory("my-project/", list(
     directory("data/", list(
+        "data.csv"
     )),
     directory("extra/", list(
+        "professor-instructions.pdf"
     )),
     directory("output/", list(
+        "pretty-figure.png"
     )),
     directory("R/", list(
     )),
