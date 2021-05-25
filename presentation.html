@@ -4,7 +4,7 @@
     <title>R Project Structure</title>
     <meta charset="utf-8" />
     <meta name="author" content="Giuseppe Tinti Tomio" />
-    <meta name="date" content="2021-05-21" />
+    <meta name="date" content="2021-05-25" />
     <style type="text/css">a, a > code {
 color: rgb(249, 38, 114);
 text-decoration: none;
@@ -127,7 +127,7 @@ class: center, middle, inverse, title-slide
 # R Project Structure
 ## How to organize files in your R projects
 ### Giuseppe Tinti Tomio
-### 2021-05-21
+### 2021-05-25
 
 ---
 
@@ -191,23 +191,23 @@ class: inverse, center, middle
 ---
 # No structure
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # No structure (RStudio project)
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).
 
@@ -220,29 +220,29 @@ class: inverse, center, middle
 ---
 # Basic template
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;data.csv&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;professor-instructions.pdf&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;pretty-figure.png&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Basic template
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 class: inverse, center, middle
@@ -253,80 +253,67 @@ class: inverse, center, middle
 ---
 # Extensions: subfolders
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;clean/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;raw/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;figure/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;model/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;table/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;clean.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;clean/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;raw/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;figure/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;model/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;table/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;clean.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: R Markdown
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: R Markdown (structured)
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;Rmd/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;render.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.html&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.pdf&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;Rmd/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;presentation.Rmd&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;report.Rmd&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;render.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 # Extensions: shiny
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;global.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;server.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;ui.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;app.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
-
----
-# Extensions: plumber
-
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;plumber.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;api.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;global.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   ├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;server.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;|   └── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;ui.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;app.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 ---
 class: inverse, center, middle
@@ -337,16 +324,16 @@ class: inverse, center, middle
 ---
 # Intermediate template
 
-&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;data/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;extra/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;output/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB;font-weight: bold;&#39;&gt;R/&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;.gitignore&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;README.md&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/CODE&gt;&lt;/PRE&gt;
+&lt;PRE class=&quot;fansi fansi-output&quot;&gt;&lt;CODE&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;my-project/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;data/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;extra/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;output/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;color: #0000BB; font-weight: bold;&#39;&gt;R/&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;.gitignore&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;README.md&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;├── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;analysis.R&lt;/span&gt;
+&lt;span style=&#39;color: #555555;&#39;&gt;└── &lt;/span&gt;&lt;span style=&#39;font-weight: bold;&#39;&gt;my-project.Rproj&lt;/span&gt;
+&lt;/CODE&gt;&lt;/PRE&gt;
 
 You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).
 
@@ -360,6 +347,7 @@ class: inverse, center, middle
 # Advanced structure
 
 Some tools for advanced structures:
+- `{here}` for reliable relative paths
 - `{targets}` to structure analysis
 - Package structure to structure projects (yeah, not intuitive)
 - `{lintr}` to enforce code consistency
