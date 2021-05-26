@@ -76,7 +76,7 @@ class: inverse, center, middle
 
 - Always aim for the simplest structure that does the job
 
-.footnote[You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)].
+.footnote[You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example).]
 
 ---
 class: inverse, center, middle
