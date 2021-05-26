@@ -1,6 +1,3 @@
-# Base on pydantic https://github.com/samuelcolvin/pydantic
-# https://github.com/cookiecutter/cookiecutter
-
 .PHONY: install_dependencies
 install_dependencies:
 	Rscript -e 'install.packages("devtools")'
@@ -8,7 +5,7 @@ install_dependencies:
 
 .PHONY: clean
 clean:
-	find output/ -not -name ".gitignore" -type f -delete
+	find output/ -not -name "^\." -type f -delete
 
 .PHONY: document
 document:
