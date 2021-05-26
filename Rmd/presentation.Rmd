@@ -318,7 +318,7 @@ Use the package structure (yeah, not intuitive):
 ---
 # Advanced structure
 
-Some tools for advanced structures:
+Some advanced tools:
 - `{here}` to build reliable relative paths
 
 - `{usethis}` to setup project
