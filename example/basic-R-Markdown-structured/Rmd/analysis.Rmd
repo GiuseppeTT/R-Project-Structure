@@ -9,10 +9,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
 library(gt)
-library(here)
-source(here("R/functions.R"))
 
-data <- read_csv(here("data/diamonds.csv"))
+source("R/functions.R")
+
+data <- read_csv("data/diamonds.csv")
 ```
 
 # Analysis

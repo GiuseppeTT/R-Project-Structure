@@ -1,6 +1,6 @@
 # R-Project-Structure
 ## Description
-A presentation about R project structures.
+A presentation about R project structures. It includes a basic template along with some extensions that should cover most cases. For the more advanced users, the presentation also mentions some practices such as version control and containerization.
 
 ## Useful links
 - [Presentation](giuseppett.github.io/r-project-structure/presentation.html)
@@ -8,7 +8,18 @@ A presentation about R project structures.
 
 ## How to run
 ### ... On RStudio
-**TODO:** The same steps as "How to run ... On terminal (linux)" but on Rstudio.
+You can run the project in RStudio by following these steps:
+- Open RStudio
+- Click on "File" and then "New Project..." on the top bar. A window will open
+- Select "Version Control" and then "Git"
+- Paste "https://github.com/GiuseppeTT/R-Project-Structure" in the "Repository URL" field, select the parent directory of the project in "Create project as a subdirectory of" and then click on "Create Project"
+- Wait for the project to be created
+- Paste and execute the following commands in the R console:
+    - `install.packages("devtools")`
+    - `devtools::install_deps(dependencies = TRUE)`
+    - `devtools::document()`
+    - `devtools::install()`
+- After everying, run the `render.R` script
 
 ### ... On VSCode
 You can run the project inside a development container by following these steps in the VSCode code editor:

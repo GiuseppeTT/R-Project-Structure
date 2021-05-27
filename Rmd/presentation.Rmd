@@ -35,7 +35,9 @@ class: inverse, center, middle
 Have you faced any of this problems lately?
 
 - Feel things are constantly disorganized
+
 - Doesn't remember how to run your analysis
+
 - Is afraid of changing one line and breaking everything
 
 Then you will definitely benefit from this work!
@@ -52,9 +54,13 @@ class: inverse, center, middle
 In this presentation, I will:
 
 - Introduce RStudio projects
+
 - Teach a powerful, yet simple, project template
+
 - Show how to extend it (e.g. `{shiny}` apps)
+
 - Discuss a bit about version control
+
 - Mention some tools for advanced users
 
 ---
@@ -64,9 +70,13 @@ class: inverse, center, middle
 ---
 # Project structure
 
-- The purpose of a project structure is to **save time** by enforcing **organization**
+- Project structure is a technical name for how you organize your files in your project
+
+- The purpose is to **save time** by enforcing **organization**
+
 - Always aim for the simplest structure that does the job
-- You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example)
+
+.footnote[You can find examples of projects that follow the structures [here](https://github.com/GiuseppeTT/R-Project-Structure/tree/main/example).]
 
 ---
 class: inverse, center, middle
@@ -103,13 +113,31 @@ directory("my-project/", list(
 ))
 ```
 
-You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).
+.footnote[You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
 
 ---
 class: inverse, center, middle
 # Basic template
 
 ### 80% of results for 20% of effort
+
+---
+# Basic template
+
+```{r}
+directory("my-project/", list(
+    directory("data/", list(
+    )),
+    directory("extra/", list(
+    )),
+    directory("output/", list(
+    )),
+    directory("R/", list(
+    )),
+    "analysis.R",
+    "my-project.Rproj"
+))
+```
 
 ---
 # Basic template
@@ -133,28 +161,10 @@ directory("my-project/", list(
 ```
 
 ---
-# Basic template
-
-```{r}
-directory("my-project/", list(
-    directory("data/", list(
-    )),
-    directory("extra/", list(
-    )),
-    directory("output/", list(
-    )),
-    directory("R/", list(
-    )),
-    "analysis.R",
-    "my-project.Rproj"
-))
-```
-
----
 class: inverse, center, middle
 # Basic template extensions
 
-### TODO
+### Only a Sith deals in absolutes
 
 ---
 # Extensions: subfolders
@@ -242,30 +252,8 @@ directory("my-project/", list(
     directory("output/", list(
     )),
     directory("R/", list(
-        "global.R",
-        "server.R",
-        "ui.R"
     )),
     "app.R",
-    "my-project.Rproj"
-))
-```
-
----
-# Extensions: plumber
-
-```{r}
-directory("my-project/", list(
-    directory("data/", list(
-    )),
-    directory("extra/", list(
-    )),
-    directory("output/", list(
-    )),
-    directory("R/", list(
-        "plumber.R"
-    )),
-    "api.R",
     "my-project.Rproj"
 ))
 ```
@@ -296,7 +284,20 @@ directory("my-project/", list(
 ))
 ```
 
-You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).
+---
+# Intermediate template
+
+- Version control is a technical name for git/GitHub
+
+- Basicaly a `CTRL+Z` with steroids
+
+- Solves problems like `Project_v3_final_truly_final_version2.zip`
+
+- Essential for teamwork coding
+
+- Great for sharing your work!
+
+.footnote[You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
 
 ---
 class: inverse, center, middle
@@ -307,26 +308,63 @@ class: inverse, center, middle
 ---
 # Advanced structure
 
-Some tools for advanced structures:
+Use the package structure (yeah, not intuitive):
+
+- Established structure
+
+- Free dependency management with `devtools::install_deps()`
+
+- Access to a lot of useful packages:
+
+    - `{devtools}` for development
+
+    - `{roxygen2}` for documentation
+
+    - `{testthat}` for unit testing
+
+- Access to a lot of pre-made solutions
+
+- Easy to share with `devtools::install_github("repository/project")`
+
+.footnote[You can find more information about the package structure [here](https://r-pkgs.org/).]
+
+---
+# Advanced structure
+
+Some advanced tools:
+- `{here}` to build reliable relative paths
+
+- `{usethis}` to setup project
+
 - `{targets}` to structure analysis
-- Package structure to structure projects (yeah, not intuitive)
+
+- `{renv}` to manage R packages strictly
+
 - `{lintr}` to enforce code consistency
-- GitHub Pages and/or `{rsconnect}` to host presentations, reports, dashboards, apis, etc
+
+- `{rsconnect}` and/or GitHub Pages to host presentations, reports, dashboards, apis, etc
+
 - `docker` to solve **all** dependency problems
+
 - GitHub Actions to automate everything above
 
 ---
 class: inverse, center, middle
-# Last remarks
+# Summary
 
-### 30 minutes of presentation in 3 minutes
+### The only thing here you need to pay attention to
 
 ---
-# Last remarks
+# Summary
 
 In summary:
+
 - If your project is going to take more than one **day**, use at least the **basic** structure
-- If your project is going to evolve more than one **coder**, try to use at least the **intermediate** structure
-- If your project is going to take **a lot of** time and/or people, consider the **advanced** practices
+
+- If your project is going to take more than one **coder**, try to use at least the **intermediate** structure
+
+- If your project is going to take **a lot of** time and/or people, consider the **advanced** structure
+
 - Extend them as necessary, they are flexible!
+
 - BUT, don't overcomplicate

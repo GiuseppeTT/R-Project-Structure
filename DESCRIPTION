@@ -14,7 +14,6 @@ License: MIT + file LICENSE
 URL: https://github.com/GiuseppeTT/R-Project-Structure
 Imports:
     crayon,
-    here,
     magrittr,
     purrr,
     rmarkdown,
@@ -23,8 +22,8 @@ Imports:
 Suggests:
     devtools,
     gt,
+    here,
     lintr,
-    plumber,
     shiny,
     tidyverse,
     usethis
