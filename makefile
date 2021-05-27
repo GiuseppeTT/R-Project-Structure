@@ -5,7 +5,7 @@ install_dependencies:
 
 .PHONY: clean
 clean:
-	find output/ -not -name "^\." -type f -delete
+	find output/ -not -name ".*" -type f -delete
 
 .PHONY: document
 document:
