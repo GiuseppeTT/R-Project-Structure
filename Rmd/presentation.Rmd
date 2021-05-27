@@ -288,9 +288,13 @@ directory("my-project/", list(
 # Intermediate template
 
 - Version control is a technical name for git/GitHub
+
 - Basicaly a `CTRL+Z` with steroids
+
 - Solves problems like `Project_v3_final_truly_final_version2.zip`
+
 - Essential for teamwork coding
+
 - Great for sharing your work!
 
 .footnote[You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
