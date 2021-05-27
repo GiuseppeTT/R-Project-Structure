@@ -164,7 +164,7 @@ directory("my-project/", list(
 class: inverse, center, middle
 # Basic template extensions
 
-### TODO
+### Only a Sith deals in absolutes
 
 ---
 # Extensions: subfolders
