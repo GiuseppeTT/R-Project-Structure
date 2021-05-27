@@ -15,10 +15,10 @@ You can run the project in RStudio by following these steps:
 - Paste "https://github.com/GiuseppeTT/R-Project-Structure" in the "Repository URL" field, select the parent directory of the project in "Create project as a subdirectory of" and then click on "Create Project"
 - Wait for the project to be created
 - Paste and execute the following commands in the R console:
-    - install.packages("devtools")
-    - devtools::install_deps(dependencies = TRUE)
-    - devtools::document()
-    - devtools::install()
+    - `install.packages("devtools")`
+    - `devtools::install_deps(dependencies = TRUE)`
+    - `devtools::document()`
+    - `devtools::install()`
 - After everying, run the `render.R` script
 
 ### ... On VSCode
