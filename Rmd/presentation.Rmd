@@ -36,6 +36,8 @@ Have you faced any of this problems lately?
 
 - Feel things are constantly disorganized
 
+- Cannot reproduce your analysis in your friend's computer
+
 - Doesn't remember how to run your analysis
 
 - Is afraid of changing one line and breaking everything
