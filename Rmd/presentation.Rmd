@@ -198,7 +198,7 @@ directory("my-project/", list(
 ```
 
 ---
-# Extensions: R Markdown
+# Extensions: R Markdown (simplified)
 
 ```{r}
 directory("my-project/", list(
@@ -207,11 +207,11 @@ directory("my-project/", list(
     directory("extra/", list(
     )),
     directory("output/", list(
+        "presentation.html",
+        "report.pdf"
     )),
     directory("R/", list(
     )),
-    "presentation.html",
-    "report.pdf",
     "presentation.Rmd",
     "report.Rmd",
     "my-project.Rproj"
@@ -219,7 +219,7 @@ directory("my-project/", list(
 ```
 
 ---
-# Extensions: R Markdown (structured)
+# Extensions: R Markdown
 
 ```{r}
 directory("my-project/", list(

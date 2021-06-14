@@ -4,6 +4,7 @@
 ^data$
 ^example$
 ^extra$
+^makefile$
 ^output$
 ^render\.R$
 ^Rmd$
