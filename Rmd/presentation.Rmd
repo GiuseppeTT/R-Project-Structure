@@ -32,17 +32,17 @@ class: inverse, center, middle
 ---
 # Motivation
 
-Have you faced any of this problems lately?
+Have you faced any of these problems lately?
 
 - Feel things are constantly disorganized
 
 - Cannot reproduce your analysis in your friend's computer
 
-- Doesn't remember how to run your analysis
+- Don't remember how to run your analysis
 
-- Is afraid of changing one line and breaking everything
+- Are afraid of changing one line and breaking everything
 
-Then you will definitely benefit from this work!
+Then you will benefit from this work!
 
 ---
 class: inverse, center, middle
@@ -306,6 +306,8 @@ directory("my-project/", list(
 
 ---
 # Intermediate template
+
+Version control:
 
 - Version control is a technical name for git/GitHub
 
