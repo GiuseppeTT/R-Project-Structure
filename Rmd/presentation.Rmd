@@ -122,7 +122,7 @@ directory("my-project/", list(
 ))
 ```
 
-.footnote[You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
+.footnote[You can find more information about RStudio project [here](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/), [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
 
 ---
 class: inverse, center, middle
@@ -280,7 +280,7 @@ directory("my-project/", list(
 ))
 ```
 
-.footnote[You can find one example of a shiny app [here](https://shiny.rstudio.com/gallery/radiant.html).]
+.footnote[You can find an example of a shiny app [here](https://shiny.rstudio.com/gallery/radiant.html).]
 
 ---
 class: inverse, center, middle
@@ -323,7 +323,7 @@ Version control:
 
 - Great for sharing your work!
 
-.footnote[You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
+.footnote[You can find more information about git and GitHub [here](https://happygitwithr.com/), [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
 
 ---
 class: inverse, center, middle
