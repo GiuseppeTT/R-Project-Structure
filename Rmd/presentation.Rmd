@@ -103,9 +103,11 @@ directory("my-project/", list(
 ```
 
 ---
-class: center
+class: center, middle
 
-![drake-setwd](../inst/image/drake-setwd.jpg)
+```{r out.width = "75%"}
+knitr::include_graphics("../inst/image/drake-setwd.png", error = FALSE)
+```
 
 ---
 # No structure (RStudio project)
@@ -252,7 +254,9 @@ directory("my-project/", list(
 
 Remember to set the "Knit Directory" option to "Project Directory" so your R Markdown files will knit relative to the project folder instead of `Rmd/`
 
-![knit-directory-options](../inst/image/knit-directory-options.png)
+```{r}
+knitr::include_graphics("../inst/image/knit-directory-options.png", error = FALSE)
+```
 
 ---
 # Extensions: shiny
