@@ -105,6 +105,11 @@ directory("my-project/", list(
 ---
 # No structure (RStudio project)
 
+![drake-setwd](../inst/image/drake-setwd.jpg)
+
+---
+# No structure (RStudio project)
+
 ```{r}
 directory("my-project/", list(
     "data.csv",
@@ -245,7 +250,7 @@ directory("my-project/", list(
 ---
 # Extensions: R Markdown
 
-Remember
+Remember to set the "Knit Directory" option to "Project Directory" so your R Markdown files will knit relative to the project folder instead of `Rmd/`
 
 ![knit-directory-options](../inst/image/knit-directory-options.png)
 
