@@ -5,7 +5,7 @@ prefix <- function(
     if (last)
         branch <- "\u2514\u2500\u2500 "  # "└── "
     else
-        branch <- "\u251\u2500\u2500 "  # "├── "
+        branch <- "\u251C\u2500\u2500 "  # "├── "
 
     if (level == 0) {
         x <- ""
