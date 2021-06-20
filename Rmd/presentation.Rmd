@@ -67,14 +67,14 @@ In this presentation, I will:
 
 ---
 class: inverse, center, middle
-# Enough! Let's begin
+# Enough! Let's start
 
 ---
 # Project structure
 
 - Project structure is a technical name for how you organize your files in your project
 
-- The purpose is to **save time** by enforcing **organization**
+- The goal is to **save time** by enforcing **organization**
 
 - Always aim for the simplest structure that does the job
 
@@ -129,10 +129,13 @@ class: inverse, center, middle
 ```{r}
 directory("my-project/", list(
     directory("data/", list(
+        "data.csv"
     )),
     directory("extra/", list(
+        "professor-instructions.pdf"
     )),
     directory("output/", list(
+        "pretty-figure.png"
     )),
     directory("R/", list(
     )),
@@ -147,13 +150,10 @@ directory("my-project/", list(
 ```{r}
 directory("my-project/", list(
     directory("data/", list(
-        "data.csv"
     )),
     directory("extra/", list(
-        "professor-instructions.pdf"
     )),
     directory("output/", list(
-        "pretty-figure.png"
     )),
     directory("R/", list(
     )),
@@ -243,6 +243,13 @@ directory("my-project/", list(
 ```
 
 ---
+# Extensions: R Markdown
+
+Remember
+
+![knit-directory-options](../inst/image/knit-directory-options.png)
+
+---
 # Extensions: shiny
 
 ```{r}
@@ -254,6 +261,10 @@ directory("my-project/", list(
     directory("output/", list(
     )),
     directory("R/", list(
+        "functions.R",
+        "global.R",
+        "server.R",
+        "ui.R"
     )),
     "app.R",
     "my-project.Rproj"
@@ -291,7 +302,7 @@ directory("my-project/", list(
 
 - Version control is a technical name for git/GitHub
 
-- Basicaly a `CTRL+Z` with steroids
+- Basicaly a `CTRL+Z` on steroids
 
 - Solves problems like `Project_v3_final_truly_final_version2.zip`
 
