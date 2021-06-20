@@ -103,7 +103,7 @@ directory("my-project/", list(
 ```
 
 ---
-# No structure (RStudio project)
+class: center
 
 ![drake-setwd](../inst/image/drake-setwd.jpg)
 
@@ -276,6 +276,8 @@ directory("my-project/", list(
 ))
 ```
 
+.footnote[You can find one example of a shiny app [here](https://shiny.rstudio.com/gallery/radiant.html).]
+
 ---
 class: inverse, center, middle
 # Intermediate template
@@ -368,14 +370,14 @@ Some advanced tools:
 
 ---
 class: inverse, center, middle
-# Summary
+# Key takeaways
 
 ### The only thing here you need to pay attention to
 
 ---
-# Summary
+# Key takeaways
 
-In summary:
+Key takeaways:
 
 - If your project is going to take more than one **day**, use at least the **basic** structure
 
