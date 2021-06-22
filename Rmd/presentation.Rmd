@@ -32,17 +32,17 @@ class: inverse, center, middle
 ---
 # Motivation
 
-Have you faced any of this problems lately?
+Have you faced any of these problems lately?
 
 - Feel things are constantly disorganized
 
 - Cannot reproduce your analysis in your friend's computer
 
-- Doesn't remember how to run your analysis
+- Don't remember how to run your analysis
 
-- Is afraid of changing one line and breaking everything
+- Are afraid of changing one line and breaking everything
 
-Then you will definitely benefit from this work!
+Then you will benefit from this work!
 
 ---
 class: inverse, center, middle
@@ -67,14 +67,14 @@ In this presentation, I will:
 
 ---
 class: inverse, center, middle
-# Enough! Let's begin
+# Enough! Let's start
 
 ---
 # Project structure
 
 - Project structure is a technical name for how you organize your files in your project
 
-- The purpose is to **save time** by enforcing **organization**
+- The goal is to **save time** by enforcing **organization**
 
 - Always aim for the simplest structure that does the job
 
@@ -103,6 +103,13 @@ directory("my-project/", list(
 ```
 
 ---
+class: center, middle
+
+```{r out.width = "75%"}
+knitr::include_graphics("../inst/image/drake-setwd.png", error = FALSE)
+```
+
+---
 # No structure (RStudio project)
 
 ```{r}
@@ -115,31 +122,13 @@ directory("my-project/", list(
 ))
 ```
 
-.footnote[You can find more information about RStudio project [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
+.footnote[You can find more information about RStudio project [here](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/), [here](https://r4ds.had.co.nz/workflow-projects.html) and [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects).]
 
 ---
 class: inverse, center, middle
 # Basic template
 
 ### 80% of results for 20% of effort
-
----
-# Basic template
-
-```{r}
-directory("my-project/", list(
-    directory("data/", list(
-    )),
-    directory("extra/", list(
-    )),
-    directory("output/", list(
-    )),
-    directory("R/", list(
-    )),
-    "analysis.R",
-    "my-project.Rproj"
-))
-```
 
 ---
 # Basic template
@@ -154,6 +143,24 @@ directory("my-project/", list(
     )),
     directory("output/", list(
         "pretty-figure.png"
+    )),
+    directory("R/", list(
+    )),
+    "analysis.R",
+    "my-project.Rproj"
+))
+```
+
+---
+# Basic template
+
+```{r}
+directory("my-project/", list(
+    directory("data/", list(
+    )),
+    directory("extra/", list(
+    )),
+    directory("output/", list(
     )),
     directory("R/", list(
     )),
@@ -243,6 +250,15 @@ directory("my-project/", list(
 ```
 
 ---
+# Extensions: R Markdown
+
+Remember to set the "Knit Directory" option to "Project Directory" so your R Markdown files will knit relative to the project folder instead of `Rmd/`
+
+```{r}
+knitr::include_graphics("../inst/image/knit-directory-options.png", error = FALSE)
+```
+
+---
 # Extensions: shiny
 
 ```{r}
@@ -254,11 +270,17 @@ directory("my-project/", list(
     directory("output/", list(
     )),
     directory("R/", list(
+        "functions.R",
+        "global.R",
+        "server.R",
+        "ui.R"
     )),
     "app.R",
     "my-project.Rproj"
 ))
 ```
+
+.footnote[You can find an example of a shiny app [here](https://shiny.rstudio.com/gallery/radiant.html).]
 
 ---
 class: inverse, center, middle
@@ -289,9 +311,11 @@ directory("my-project/", list(
 ---
 # Intermediate template
 
+Version control:
+
 - Version control is a technical name for git/GitHub
 
-- Basicaly a `CTRL+Z` with steroids
+- Basicaly a `CTRL+Z` on steroids
 
 - Solves problems like `Project_v3_final_truly_final_version2.zip`
 
@@ -299,7 +323,7 @@ directory("my-project/", list(
 
 - Great for sharing your work!
 
-.footnote[You can find more information about git and GitHub [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
+.footnote[You can find more information about git and GitHub [here](https://happygitwithr.com/), [here](https://r-pkgs.org/git.html) and [here](https://guides.github.com/activities/hello-world/).]
 
 ---
 class: inverse, center, middle
@@ -352,14 +376,14 @@ Some advanced tools:
 
 ---
 class: inverse, center, middle
-# Summary
+# Key takeaways
 
 ### The only thing here you need to pay attention to
 
 ---
-# Summary
+# Key takeaways
 
-In summary:
+Key takeaways:
 
 - If your project is going to take more than one **day**, use at least the **basic** structure
 
